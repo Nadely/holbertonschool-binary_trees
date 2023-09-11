@@ -1,8 +1,8 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_preorder -  function that goes through a binary
- * tree using post-order traversal
+ * binary_tree_postorder - goes through a binary tree using post-order
+ *  traversal
  *
  * @tree: pointer on parent's adress
  * @func: for go in tree
