@@ -1,10 +1,12 @@
 #include "binary_trees.h"
 
 /**
- * mul - The opcode mul multiplies the second top element of the stack with the
- * top element of the stack.
- * @stack: double pointer to the top of the stack
- * @line_number: line number of the current opcode
+ * binary_tree_node - function for create a new node for a tree
+ *
+ * @parent: pointer on parent's adress
+ * @value: value in new node
+ *
+ * Return: new node or null on failure
  */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
