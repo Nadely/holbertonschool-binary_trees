@@ -1,12 +1,11 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_left - function for create a new node for a tree
+ * binary_tree_delete - function that deletes an entire binary tree
  *
- * @parent: pointer on parent's adress
- * @value: value in new node
+ * @tree:  pointer to the root node
  *
- * Return: new node or null on failure
+ * Return: nothing
  */
 void binary_tree_delete(binary_tree_t *tree)
 {

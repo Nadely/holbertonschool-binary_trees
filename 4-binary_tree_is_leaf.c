@@ -5,7 +5,7 @@
  *
  * @node: pointer on parent's adress
  *
- * Return: new node or null on failure
+ * Return: 1 for true or 0 for false
  */
 
 int binary_tree_is_leaf(const binary_tree_t *node)
