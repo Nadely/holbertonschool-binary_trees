@@ -34,7 +34,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 /**
  * binary_tree_is_perfect - function that checks if a binary tree is perfect
  *
- * @node: pointer on parent's adress
+ * @tree: pointer on parent's adress
  *
  * Return: 1 for true or 0 for false
  */
