@@ -5,7 +5,7 @@
  *
  * @tree: pointer on parent's adress
  *
- * Return: nothing
+ * Return: measures the height
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
