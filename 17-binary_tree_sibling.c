@@ -15,20 +15,13 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	if (node == NULL || node->parent == NULL)
 		return (NULL);
 
+	if (parent->left == NULL || parent->right == NULL)
+		return (NULL);
+
 	if (parent->left == node)
-	{
-		if (parent->right)
-			return (parent->right);
-		else
-			return (NULL);
-	}
+		return (parent->right);
 	else if (parent->right == node)
-	{
-		if (parent->left)
-			return (parent->left);
-		else
-			return (NULL);
-	}
+		return (parent->left);
 	else
 		return (NULL);
 }
