@@ -15,13 +15,8 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 	if (node == NULL || node->parent == NULL || node->parent->parent == NULL)
 		return (NULL);
 
-	if (grand_parent->left == NULL || grand_parent->right == NULL)
-		return (NULL);
-
 	if (grand_parent->left == node->parent)
 		return (grand_parent->right);
-	else if (grand_parent->right == node)
+	else
 		return (grand_parent->left);
-
-	return (NULL);
 }
