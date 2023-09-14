@@ -6,6 +6,7 @@
  *
  * @tree: pointer on parent's adress
  * @func: for go in tree
+ * @i: the level pointer
  *
  * Return: nothing
  */
