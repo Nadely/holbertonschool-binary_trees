@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * isBSTUtil - Vérifie si un arbre binaire satisfait la propriété du BST
+ * is_bst - Vérifie si un arbre binaire satisfait la propriété du BST
  *
  * @tree: pointeur vers le nœud de l'arbre
  * @min: valeur minimale autorisée (limite inférieure)
@@ -17,7 +17,7 @@ int is_bst(const binary_tree_t *tree, int min, int max)
 		return (0);
 
 	return (is_bst(tree->left, min, tree->n) &&
-			is_bst(tree->right, tree->n, max));
+		is_bst(tree->right, tree->n, max));
 }
 
 /**
@@ -36,5 +36,5 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 	if (!binary_tree_is_bst(tree->left) && !binary_tree_is_bst(tree->right))
 		return (1);
 
-	return (is_bst (tree, INT_MIN, INT_MAX));
+	return (is_bst(tree, INT_MIN, INT_MAX));
 }
